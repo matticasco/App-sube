@@ -1,0 +1,497 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	max-width: 360px;
+	font-family: 'Roboto', bold,sans-serif, italic;
+}
+p{
+	text-align:center;
+}
+
+.flex-container{
+	max-width: 360px;
+	max-height: 600px;
+	width: 360px;
+	height: 640px;
+	margin:auto;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.flex-container-registro{
+	max-width: 360px;
+	max-height: 600px;
+	width: 360px;
+	height: 640px;
+	margin:auto;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+
+.logo{
+	width: 349px;
+	height: 194px;
+	position: relative;
+
+}
+.fondo{
+	position: absolute;
+	display: block;
+	z-index: 0;
+}
+.boton{
+	position: relative;
+	width: 90%;
+	height: 50px;
+	font-family: 'Roboto', bold;
+	font-size: 16px;
+	color: #fff;
+	background: #355784;
+	text-decoration: none;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a.boton.index{
+	position: relative;
+	width: 360px;
+	height: 130px;
+	font-size: 27px;
+	background : rgba(32, 39, 43, 1);
+	opacity: 0.8;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px; 
+}
+
+/* botones del HOME*/
+.homeBoton{
+	width: 100%;
+	height: 124.75px;
+	background: grey;
+	color:#fff;
+	text-decoration:none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#uno{
+background: #98C280;
+}
+#dos{
+background: #978BE0;
+}
+#tres{
+background: #80C2B3;
+}
+#cuatro{
+background: #80A5C2;
+}
+
+
+
+.forgot{
+	margin-top:20px;
+	margin-bottom:20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.saldo p{
+color:#000;
+display: inline-block;
+margin-top: 
+}
+.monto{
+color:blue;
+display: inline;
+}
+
+
+form{
+display:flex;
+flex-direction: column;
+flex-wrap: no-wrap;
+justify-content: center;
+align-items: center;
+z-index: 2;
+}
+
+.flex-container p{
+	display: flex;
+	flex-direction:column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+.input{
+	height: 40px;
+	width: 90%;
+	/*position: relative;*/
+	outline: none;
+	background: none;
+	border: none;
+	padding: 5px;
+	color: #fff;
+	border-bottom: 2px solid #263238;
+	margin-bottom: 20px;
+}
+
+.input::placeholder {
+  color: #fff;
+ }
+
+ /* grid container */
+
+.grid-container{
+	height: 60px;
+	width: 100%;
+	background: #009AD4;
+	display: grid;
+	grid-template-columns: 100%; 
+	grid-template-rows: 60px;
+	justify-items:start;
+}
+
+
+.back{
+	grid-row: 1;
+	grid-column: 1;
+	background: #009AD4; 
+	text-decoration: none;
+	color:#fff;
+	font-size: 20px;
+	align-self: start;
+	justify-self:start;
+	text-align: center;
+	line-height: 60px;
+	margin-left: 10px;
+}
+
+
+
+/* REGISTRO */
+.flex-container-metodo{
+	max-width: 360px;
+	max-height: 640px;
+	width: 360px;
+	height: 640px;
+	margin:auto;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* CHECKBOX ESTILO BUTTON*/
+.registro input[type="checkbox"]{
+	display: none;
+}
+.registro label{
+	width: 150px;
+	height: 35px;
+	color: #009AD4;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #009AD4;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-align: center;
+	justify-content: center;
+	font-size: 1em;
+	border-radius: 20px;
+	padding-top: 8px;
+	margin-bottom: 20px;
+}
+.registro input[type="checkbox"]:checked + label{
+	color: #fff ;
+	background: #009AD4;
+}
+
+/**/
+.cuadroAzul{
+	background: #009AD4;
+	height: 129px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: left;
+	justify-content: left;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	padding-left: 10px;
+}
+
+.cuadroAzul p{
+	text-align: left;
+	margin-bottom: 10px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.inputRegistro{
+	height: 40px;
+	width: 288px;
+	color: #000;
+	outline: none;
+	background: none;
+	border: none;
+	padding: 5px;
+	border-bottom: 2px solid #009AD4;
+	/*margin-bottom: 20px;*/
+}
+}
+.infoRegistro{
+	width: 300px;
+	display: flex;
+
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.security{
+	width: 42px;
+	outline: none;
+	background: none;
+	border: none;
+	margin-right:10px; 
+	margin-left: 10px;
+	padding: 5px;
+	color: #000;
+	border-bottom: 5px solid #3A81B0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.registro{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.botonRegistro{
+	background: #009AD4;
+	width: 80%;
+	height: 38px;
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.botonBlanco{
+	width: 80%;
+	height: 38px;
+	background: #fff;
+	color: #95989A;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.input.date{
+	border-bottom: 2px solid #3A81B0;
+	font-size: 14px;
+	width: 140px;
+	color: #000;
+	display:flex;
+	justify-content: flex-start;
+	margin-right: 10px; 
+}
+.input.codTarjeta{
+	border-bottom: 2px solid #3A81B0;
+	font-size: 14px;
+	width: 140px;
+	color: #000;
+	/*margin-right: 10px ;
+	margin-top: 50px;
+	text-align: center;
+	float: right;*/
+	display:flex;
+	justify-content: flex-end;
+}
+
+form div.alineados{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-left: 10px;
+
+}
+
+.check{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom:10px; 
+}
+
+
+/* CARGAR SALDO */
+.flex-container-carga{
+	max-width: 360px;
+	max-height: 600px;
+	width: 360px;
+	height: 640px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.formCarga{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+/*input de cargar saldo*/
+.carga{
+	height: 70px;
+	width: 30%;
+	/*position: relative;*/
+	outline: none;
+	background: none;
+	border: none;
+	padding: 5px;
+	color: #000;
+	font-size: 60px;
+	border-bottom: 2px solid #009AD4;
+	margin-bottom: 20px;
+}
+
+.paratexto{
+	opacity: 0.8;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/*margin-left:100px;*/
+	flex-basis: 360px;
+	align-self:center;
+}
+
+.botonCarga{
+	background: #009AD4;
+	width: 80%;
+	height: 38px;
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+	margin-left: 36px; 
+}
+
+				/*pantalla modal de cargar saldo*/
+.modal-contenido{
+  background:#fff;
+  width:300px;
+  height: 210px;
+  padding: 50px 20px;
+  margin: auto;
+  margin-top: ;
+  position: relative;
+}
+
+.modalCarga{
+	 background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+   transition: all 1s;
+}
+
+#modalcarga:target{
+  opacity:1;
+  pointer-events:auto;
+}
+
+#cancelar,#aceptar{
+	text-decoration: none;
+	color: #009AD4;
+	margin-top: 80px;
+}
+#cancelar{
+	float: left;
+}
+#aceptar{
+	float: right;
+}
+
+.negrita{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	/*margin-left:100px;*/
+	flex-basis: 300px;
+	align-self:center;
+	margin-left: 30px;
+}
+
+
+/* HORARIOS */
+.flex-container-horarios{
+	width: 360px;
+	height: 580px;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+}
+
+.horarioBoton{
+	height: 164px;
+	width: 100%;
+	text-decoration: none;
+	text-align: center;
+	/*justify-content: space-between;*/
+	align-content: center;
+}
+
+#subte{ background:#978BE0 ; }
+#tren{background: #80C2B3;}
+#colectivo{background: #80A5C2 ;}

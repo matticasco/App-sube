@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="prefixfree.js"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<div class="grid-container">
+		<a href="index.html" class="back"><span></span> '<' </a>
+	</div>
+
+	<div class="flex-container-registro">
+		<div class="cuadroAzul">
+			<p>METODO DE PAGO<br/>
+			Agregue tarjeta de crédito o debito</p>
+		</div>
+
+			<img src="images/tipo.png" alt="tipo tarjeta">
+		<form class="registro">
+
+		<div class="check">
+			<input type="checkbox" id="visa" class="check">
+			<label for="visa">Visa</label>
+
+			<input type="checkbox" id="master">
+			<label for="master">Master Card</label>
+		</div>
+
+			<input type="number" maxlength="20" min="0" max="9" class="inputRegistro" placeholder="Numero de tarjeta">
+
+			<br/>
+			<br/>
+			<p>Ingrese los datos de Vencimiento y <br/> Codigo de su tarjeta</p>
+	
+			<br/>
+			<br/>
+			<div class="alineados">
+				<input type="date" placeholder="Vencimiento" class="input date" id="vencimiento">
+
+			
+				<input type="number" maxlength="3" class="input codTarjeta" id="cod" placeholder="Seguridad">
+			</div>
+		</form>
+
+		<!--<div class="textoTarjetas">
+			<p> vencimiento </p>
+			<p>Cod. Seguridad</p>
+		</div> -->
+
+		<a href="registroCompletado.html" class="botonRegistro"> CONTINUAR </a>
+	</div>
+
+</body>
+</html>

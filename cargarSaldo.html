@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="prefixfree.js"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Document</title>
+</head>
+	<body>
+		<div class="grid-container">
+			<a href="index.html" class="back"> SUBE</a>
+		</div>
+
+		<div class="flex-container-carga">
+			<div class="formCarga">
+			 	<p> SALDO ACTUAL   $20,50</p><br/>
+			 	<p class="paratexto">SUBE: 6160 - xxxx - xxxx - xxxx</p>
+			</div>
+			<br/>
+			<!--<div class="saldo">-->
+				<p class="paratexto">MONTO</p>
+				<form>
+				<input type="numbre" maxlength="3" max="600" class="carga" placeholder="$0,0">
+				</form>
+			 <p class="paratexto"> Maximo: $1000</p>
+			
+
+			<form class="formCarga">
+				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
+				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
+				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
+				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
+				<div>
+					<label for="cod" class="paratexto"> Codigo de Seguridad</label>
+				</div>
+
+			</form>
+			<a href="#modalcarga" class="botonCarga"> CONTINUAR </a>
+		
+
+			<div id="modalcarga" class="modalCarga">
+  				<div class="modal-contenido">
+    				<h4>Carga de Saldo</h4>
+    				<p>¿Estas seguro que queres cargar $xxx,xxx a tu Tarjeta SUBE?.</p>
+    				<a href="#" id="cancelar">CANCELAR</a> <a href="cargarSaldoAcreditado.html" id="aceptar">ACEPTAR</a>
+ 				</div>  
+			</div>
+ 		</div>
+
+	</body>
+</html>
