@@ -21,23 +21,23 @@
 			<!--<div class="saldo">-->
 				<p class="paratexto">MONTO</p>
 				<form>
-				<input type="numbre" maxlength="3" max="600" class="carga" placeholder="$0,0">
+				<input type="number" maxlength="3" max="600" class="carga" placeholder="$0,00">
 				</form>
 			 <p class="paratexto"> Maximo: $1000</p>
 			
 
-			<form class="formCarga">
-				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
-				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
-				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
-				<input type="number" class="security" required="required" maxlength="1" id="cod" min="0" max="9">
+			<form class="formCarga" action="cargarSaldoAcreditado.html" onsubmit="">
+				<input type="number" class="security" required maxlength="1" id="codS1" name="codS1" min="0" max="9">
+				<input type="number" class="security" required maxlength="1" id="codS2" name="codS2" min="0" max="9">
+				<input type="number" class="security" required maxlength="1" id="codS3" name="codS3" min="0" max="9">
+				<input type="number" class="security" required maxlength="1" id="codS4" name="codS4" min="0" max="9">
 				<div>
 					<label for="cod" class="paratexto"> Codigo de Seguridad</label>
 				</div>
 
+			<input class="botonRegistro" type="submit" href="registro2.html" value="Continuar" id="cargaS">
 			</form>
-			<a href="#modalcarga" class="botonCarga"> CONTINUAR </a>
-		
+			
 
 			<div id="modalcarga" class="modalCarga">
   				<div class="modal-contenido">

@@ -18,16 +18,14 @@
 			Ahora tu número de SUBE</p>
 		</div>
 		
-		<form class="registro">
-			<input type="number" class="inputRegistro" required maxlength="16" placeholder="SUBE">
+		<form class="registro" action="registro3.html" onsubmit="return validarR2()">
+			<input type="number" class="inputRegistro" id="subeR" name="subeR" maxlength="16" placeholder="SUBE" required>
+			<div class="imagenSube">
+				<img src="images/subenum.png" alt="subenu">
+			</div>
+			<input class="botonRegistro" type="submit" href="registro2.html" value="Continuar" id="ContinuarRegistro">
+			</div>
 		</form>
-
-		<div class="imagenSube">
-			<img src="images/subenum.png" alt="subenu">
-		</div>
-
-		<a href="registro3.html" class="botonRegistro"> CONTINUAR </a>
-	</div>
-
+<script src="js/main.js"></script>
 </body>
 </html>

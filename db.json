@@ -1,0 +1,11 @@
+{
+  "usuarios" : [
+    {
+      "dni" : 38352742,
+      "password" : "Dan Jukes",
+      "codSeguridad" : "4444",
+      "tarjeta": "visa",
+      "codTarjeta" : "niidea",
+    },
+  ]
+}

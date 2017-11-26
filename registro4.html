@@ -18,11 +18,12 @@
 			Escribí tu DNI</p>
 		</div>
 		
-		<form class="registro">
-			<input type="number" class="inputRegistro" required maxlength="8" placeholder="DNI">
+		<form class="registro" action="metodoPago.html" onsubmit="return validarR4()">
+			<input type="number" class="inputRegistro" name="dniR" id="dniR" maxlength="8" placeholder="DNI" required>
+		
+		<input class="botonRegistro" type="submit" value="Continuar" id="ContinuarRegistro">
 		</form>
 
-		<a href="metodoPago.html" class="botonRegistro"> CONTINUAR </a>
 	</div>
 
 </body>

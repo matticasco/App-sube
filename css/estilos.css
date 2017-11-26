@@ -5,9 +5,60 @@
 	max-width: 360px;
 	font-family: 'Roboto', bold,sans-serif, italic;
 }
+
 p{
 	text-align:center;
 }
+
+     /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+        height: 580px;
+        width: 360px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+      	width: 360px;
+        z-index: 5;
+        background-color: #009AD4;
+        padding: 5px;
+     	border: none;
+        text-align: center;
+        line-height: 30px;
+        padding-left: 10px;
+      }
+      #end{
+      	margin-right:3px ; 
+      }
+      select{
+      	-webkit-appearance:none;
+      	-moz-appearance:none;
+      	appearance:none;
+      	  border-radius : 5px;
+  -moz-border-radius : 5px;
+  -webkit-border-radius : 5px;
+
+
+      	width: 260px;
+      	height: 28px;
+      	margin-bottom: 25px;
+      	border:none;
+      	padding-left: 10px;
+      	font-size: 16px; 
+
+      	/*margin-left: 30px;*/
+      }
+    .flotante{
+    	position: fixed;
+    	left: 20px;
+    	z-index: 6;
+    } 
+   	
 
 .flex-container{
 	max-width: 360px;
@@ -34,7 +85,16 @@ p{
 	align-items: center;
 }
 
-
+.error{
+	height: 40px;
+	width: 288px;
+	outline: none;
+	background: none;
+	border: none;
+	padding: 5px;
+	border-bottom: 5px solid #D32F2F;
+	color: red;
+}
 
 
 .logo{
@@ -164,7 +224,7 @@ z-index: 2;
 	width: 100%;
 	background: #009AD4;
 	display: grid;
-	grid-template-columns: 100%; 
+	grid-template-columns: 50% 50%; 
 	grid-template-rows: 60px;
 	justify-items:start;
 }
@@ -202,6 +262,15 @@ z-index: 2;
 }
 
 /* CHECKBOX ESTILO BUTTON*/
+.registro{
+	height: 413px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 .registro input[type="checkbox"]{
 	display: none;
 }
@@ -380,7 +449,7 @@ form div.alineados{
 /*input de cargar saldo*/
 .carga{
 	height: 70px;
-	width: 30%;
+	width: 48%;
 	/*position: relative;*/
 	outline: none;
 	background: none;
@@ -478,20 +547,211 @@ form div.alineados{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
+
+.subte{
+	width: 310px;
+	height: 405px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
 }
+
 
 .horarioBoton{
 	height: 164px;
-	width: 100%;
-	text-decoration: none;
-	text-align: center;
-	/*justify-content: space-between;*/
-	align-content: center;
+	width: 360px;
+	color:#fff;
+	text-decoration:none;
+	display: flex;
+	flex-direction: row;
 }
 
-#subte{ background:#978BE0 ; }
-#tren{background: #80C2B3;}
-#colectivo{background: #80A5C2 ;}
+#subte{ background:#978BE0 ; 	height: 164px;}
+#tren{background: #80C2B3;	height: 164px;}
+#colectivo{background: #80A5C2 ;	height: 164px;}
+
+
+.linea{
+	width: 97px;
+	height: 93px;
+  	border-radius : 12px;
+  	-moz-border-radius : 12px;
+  	-webkit-border-radius : 12px;
+  	font-size: 4em;
+  	font-weight: bold; 
+  	color: #fff;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+  	text-decoration: none;
+}
+
+.linea.A{ background: #6FA2C2; }
+.linea.B{background:  #D05949;	}
+.linea.C{background:#0870C2 ;}
+.linea.D{ background:  #5F9E54; }
+.linea.E{ background:#C253BB ; }
+.linea.H,.linea.P{background: #E6DA64;}
+
+/* select de horarios de SUBTE*/
+.flex-container-horarios-linea{
+	display: flex;
+	flex-direction: column;
+		flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+}
+
+.horarios{
+	width: 100%;
+	height: 140px;
+	background : #6FA2C2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.t1{
+	color:#fff;
+	font-weight: medium;
+	font-size: 20pt;
+	line-height: 35px;
+	justify-content: center;
+}
+.t2{
+	color:#fff;
+	font-weight: medium;
+	font-variant: italic;
+	font-size: 12pt;
+	line-height: 35px;
+	justify-content: center;
+}
+
+.proximo{
+	background: white;
+	height: 66px;
+	width: 85%;
+	border-radius : 10px;
+ 	-moz-border-radius : 10px;
+ 	-webkit-border-radius : 10px;
+ 	justify-content: center;
+}
+.proximo p{
+	font-size: 4em;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+}
+
+.funcionamiento{
+	width: 100%;
+	height: 32px;
+	background: #98C280;
+	color: #fff;
+	line-height: 32px;
+	font-size: 12pt;
+	font-weight: medium;
+	font-style: italic;
+	padding-left: 100px;
+
+}
+/* tabla de horarios  */
+.tabla{
+	margin-top: 25px;
+}
+.tabla-linea{
+	margin-top: 10px;
+}
+.tabla-linea tr{
+background-color: #B8B8B8;
+}
+
+.tabla-linea table{
+	 table-layout: fixed;
+	  width: 100%;
+	   border-collapse: collapse;
+}
+
+.tabla-linea th,td{
+	 padding: 5px;
+}
+
+.tren{
+	width: 100%;
+	height: 77.243px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	line-height: 77.243px;
+	color:#fff;
+	font-size: 12pt;
+	text-decoration: none;
+}
+.espacio{ margin-top: 40px; }
+.tren.a{ background: #978BE0 ;}
+.tren.b{ background: #94ACD6 ;}
+.tren.c{ background: #D0CAB1; }
+.tren.d{ background: #6788C0 ;}
+.tren.e{ background: #B14E62 ;}
+.tren.f{ background: #9ECBED ;}
+.tren.g{ background: #5C5680 ;}
+.tren.h{background: #2B2756;}
+
+
+.estacion{
+	width: 100%;
+	height: 40px;
+}
+.recorrido{
+	width: 100%;
+	height: 67.392px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	line-height: 77.243px;
+	color:#fff;
+	font-size: 12pt;
+	text-decoration: none;
+}
+.recorrido.a{ background: #978BE0 ;}
+.recorrido.b{ background: #94ACD6 ;}
+.recorrido.c{ background: #D0CAB1; }
+.recorrido.d{ background: #6788C0 ;}
+.recorrido.e{ background: #B14E62 ;}
+.recorrido.f{ background: #9ECBED ;}
+.recorrido.g{ background: #5C5680 ;}
+.recorrido.h{background:  #2B2756 ;}
+
+.estacionTxt{
+height: 136.516px;
+width: 70%;
+font-size: 29px;
+font-weight: thin;
+/*line-height: 50px;*/
+padding-top: 30px;
+color: #000;
+opacity: 0.8;
+}
+
+.estacion{
+	height: 38.207px;
+	width: 100%;
+	background-color: #E0E4E9 ; 
+	color: #464445;
+	padding-left: 22px;
+	line-height: 38.207px;
+	font-weight: 500;
+	text-decoration: none;
+}
+.estacion.oscuro{ background-color: #C4C7CF; }

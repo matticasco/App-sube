@@ -18,18 +18,18 @@
 			Ahora crea tu codigo de seguridad</p>
 		</div>
 		
-		<form class="registro">
-			<input type="number" class="security" required maxlength="1">
-			<input type="number" class="security" required maxlength="1">
-			<input type="number" class="security" required maxlength="1">
-			<input type="number" class="security" required maxlength="1">
-		</form>
-		<div class="infoRegistro">
-			<p>Recordalo, lo vas a necesitar siempre que necesites Cargar Saldo</p>
-		</div>
+	<form class="registro" id="rCod" action="registro2.html" onsubmit="return validar()" >
+    <input type="text" class="security"  maxlength="1" id="rCod1" name="rCod1" required />
+    <input type="text" class="security"  maxlength="1" id="rCod2" name="rCod2" required />
+    <input type="text" class="security"  maxlength="1" id="rCod3" name="rCod3" required />
+    <input type="text" class="security"  maxlength="1" id="rCod4"  name="rCod4" required />
+    <div class="infoRegistro">
+        <p>Recordalo, lo vas a necesitar siempre que necesites Cargar Saldo</p>
+    </div>
 
-		<a href="registro2.html" class="botonRegistro"> CONTINUAR </a>
+    <input class="botonRegistro" type="submit" value="Continuar" id="ContinuarRegistro" />
+	</form>
 	</div>
-
+<script src="js/main.js"></script>
 </body>
 </html>
