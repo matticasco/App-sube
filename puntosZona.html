@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="prefixfree.js"></script>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+
+<div class="grid-container">
+    <a href="home.html" class="back"><span></span> < </a>
+    <div class="back2">
+      <a href="perfilSalud.html"><img src="images/perfil.png" alt="perfil" /></a>
+    </div>   
+	</div>
+	<ul>
+		<li><a href="puntosRecarga.html">MÁS CERCANOS</a></li>
+		<li><a href="">BUSCAR POR ZONA</a></li>
+		<div class="activo izquierda"></div>
+	</ul>
+	<div class="flex-container-puntos">
+		<div id="map"></div>
+	</div>
+	   <script>
+
+      function initMap() {
+        var myLatLng = {lat: -34.92169148647862, lng: -57.95477867417503};
+        var marker73={lat:-34.921058103602476, lng:-57.94164657883812};
+        var marker7={lat:-34.91197737039566,lng:-57.9532790187659};
+        var marker8={lat:-34.922323,lng:-57.941895723215566};
+     	var puntos=[
+     		['Almacen ROBER', -34.92169148647862,-57.95477867417503,1],
+     		['LO DE NILDA', -34.921058103602476,-57.94164657883812,2],
+     		['OPEN 25HS', -34.91197737039566,-57.9532790187659,3],
+     		['Almacen NALDO',-34.922323, -57.941895723215566,4 ]
+     	];
+
+var contentString = '<div class="puntosMap">'+
+			'<b>MAXIKIOSCO ROBER</b>'+
+			'<p class="direc">7 e/ 45 y 46</p>'+
+			'<p class="dist">20mts</p>'+
+			'<p class="horario">ABIERTO HASTA LAS 19:00</p>'+
+			'</div>';
+var contentString2 = '<div class="puntosMap">'+
+			'<b>LO DE NILDA</b>'+
+			'<p class="direc">DIAG 73 y 115</p>'+
+			'<p class="dist">36mts</p>'+
+			'<p class="horario">ABIERTO HASTA LAS 17:30</p>'+
+			'</div>';
+var contentString3 = '<div class="puntosMap">'+
+			'<b>ALMACEN NANDO</b>'+
+			'<p class="direc">9 DE JULIO 356</p>'+
+			'<p class="dist">107mts</p>'+
+			'<p class="horario">ABIERTO TODO EL DÍA</p>'+
+			'</div>';
+var contentString4 = '<div class="puntosMap">'+
+			'<b>OPEN 25HS</b>'+
+			'<p class="direc">MITRE 207</p>'+
+			'<p class="dist">315mts</p>'+
+			'<p class="horario">ABIERTO TODO EL DIA</p>'+
+			'</div>';		
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'almacen Rober'
+        });
+        var marker1= new google.maps.Marker({
+        	position: marker73,
+        	map: map,
+        	titulo: 'lo de nilda'
+        });
+         var marker2= new google.maps.Marker({
+        	position: marker7,
+        	map: map,
+        	titulo: 'open 25hs'
+        });
+          var marker3= new google.maps.Marker({
+        	position: marker8,
+        	map: map,
+        	titulo: 'almacen Naldo'
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        var infowindow2 = new google.maps.InfoWindow({
+          content: contentString2
+        });
+        var infowindow3 = new google.maps.InfoWindow({
+          content: contentString3
+        });
+        var infowindow4 = new google.maps.InfoWindow({
+          content: contentString4
+        });
+        marker1.addListener('click', function() {
+          infowindow2.open(map, marker1);
+        });
+		marker2.addListener('click', function() {
+          infowindow3.open(map, marker2);
+        });
+       	marker3.addListener('click', function() {
+          infowindow4.open(map, marker3);
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker3);
+        });
+
+
+
+      }
+    </script>
+    <script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiZn2ysZ1_sWicm4f80EOUtWKpcrAmk8Y&callback=initMap">
+    </script>
+</body>
+</html>
